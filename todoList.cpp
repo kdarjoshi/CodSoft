@@ -7,11 +7,18 @@ struct todolist{
     string task;
 };
 int Id;
+/* this function is the header for this application
+   which shows the heading as "MY TODO LIST" 
+*/
 void banner(){
     cout<<"____________________________________"<<endl;
     cout<<"\t      MY TODO LIST!"<<endl;
     cout<<"____________________________________"<<endl;
 }
+
+/* this function adds a task to the list by prompting 
+   a message to add the required task
+*/
 void addTask(){
     system("cls");
     cout<<"Enter the new task:"<<endl;
@@ -42,6 +49,8 @@ void addTask(){
     }
     system("cls");
 }
+
+/* this funcion displays all the tasks present in the list*/
 void showTask(){
     system("cls");
     banner();
@@ -70,6 +79,10 @@ void showTask(){
         }
         system("cls");
 } 
+
+/* this function deletes the required task by copying all the tasks
+   to another file and neglecting the item to be deleted
+*/
 void deleteTask(){
     system("cls");
     int id;
@@ -109,6 +122,7 @@ void deleteTask(){
     }
     
 }
+/* main function*/
 int main(){
     int choice;
     system("cls");
